@@ -22,7 +22,6 @@ def get_scaler(scaler_data: ScalerData) -> any:
     :return: transformer from scikit-learn
     """
 
-    # class_scaler = NAME_TO_SCALER.get(feature_data.scaler)
     class_scaler = NAME_TO_SCALER.get(scaler_data.scaler_name)
 
     if class_scaler is None:

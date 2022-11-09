@@ -19,10 +19,6 @@ class TrainPipelineData:
     feature_data: FeatureData
     split_data: SplitData
     train_data: TrainData
-    # downloading_params: Optional[DownloadParams] = None
-    # use_mlflow: bool = False
-    # mlflow_uri: str = "Not Implemented"
-    # mlflow_experiment: str = "Not Implemented"
 
 
 TrainPipelineDataSchema = class_schema(TrainPipelineData)
