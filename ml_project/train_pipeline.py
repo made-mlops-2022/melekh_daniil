@@ -1,3 +1,7 @@
+"""
+Main script: predict
+"""
+
 import click
 from sklearn.metrics import f1_score
 from sklearn.pipeline import Pipeline
@@ -7,15 +11,15 @@ from config.train_pipeline_data import (
     TrainPipelineData
 )
 from ml_project.log.logger import get_logger
-from ml_project.pipeline.metric import dump_metric
 from ml_project.pipeline.dump_load_pipeline import dump_pipeline
+from ml_project.pipeline.metric import dump_metric
 from ml_project.pipeline.scaler import get_scaler
 from ml_project.pipeline.train import get_model, collect_pipeline
+from pipeline.dataset import download_dataset
 from pipeline.train_test_split import (
     train_test_split_with_config,
     dataframe_to_x_y
 )
-from pipeline.dataset import download_dataset
 
 F1_METRIC = 'F1'
 

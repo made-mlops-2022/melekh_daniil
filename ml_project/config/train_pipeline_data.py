@@ -1,7 +1,10 @@
+"""
+Data object
+"""
+
 from dataclasses import dataclass
 
 import yaml
-
 from marshmallow_dataclass import class_schema
 
 from ml_project.config.feature_data import FeatureData

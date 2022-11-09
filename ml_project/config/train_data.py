@@ -1,3 +1,7 @@
+"""
+Data object
+"""
+
 from dataclasses import dataclass
 
 RANDOM_STATE = 42

@@ -1,3 +1,7 @@
+"""
+Main script: predict
+"""
+
 import click
 import pandas as pd
 

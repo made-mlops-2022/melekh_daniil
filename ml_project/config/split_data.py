@@ -1,3 +1,7 @@
+"""
+Data object
+"""
+
 from dataclasses import dataclass
 
 TEST_SIZE = 0.2
