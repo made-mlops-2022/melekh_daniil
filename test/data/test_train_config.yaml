@@ -1,0 +1,26 @@
+input_dataframe_path: "test/data/test_dataframe.csv"
+output_model_path: "test/data/test_model.pkl"
+metric_path: "test/data/test_metric.csv"
+split_data:
+  test_size: 0.2
+  random_state: 42
+scaler_data:
+  scaler_name: "StandardScaler"
+train_data:
+  model_name: "LogisticRegression"
+feature_data:
+  feature:
+    - "age"
+    - "sex"
+    - "cp"
+    - "trestbps"
+    - "chol"
+    - "fbs"
+    - "restecg"
+    - "thalach"
+    - "exang"
+    - "oldpeak"
+    - "slope"
+    - "ca"
+    - "thal"
+  target: "condition"
