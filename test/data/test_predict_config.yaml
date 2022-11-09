@@ -1,0 +1,20 @@
+input_dataset_path: "test/data/test_dataframe.csv"
+model_path: "test/data/test_model_logreg.pkl"
+output_predict_path: "test/data/predict_logreg.csv"
+output_target_field: "test_predict_condition"
+feature_data:
+  feature:
+    - "age"
+    - "sex"
+    - "cp"
+    - "trestbps"
+    - "chol"
+    - "fbs"
+    - "restecg"
+    - "thalach"
+    - "exang"
+    - "oldpeak"
+    - "slope"
+    - "ca"
+    - "thal"
+  target: null
