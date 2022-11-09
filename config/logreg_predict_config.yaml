@@ -1,0 +1,20 @@
+input_dataset_path: "data/heart_cleveland_upload.csv"
+model_path: "trained_model/model_logreg.pkl"
+output_predict_path: "predict_model/predict_logreg.csv"
+output_target_field: "predict_condition"
+feature_data:
+  feature:
+    - "age"
+    - "sex"
+    - "cp"
+    - "trestbps"
+    - "chol"
+    - "fbs"
+    - "restecg"
+    - "thalach"
+    - "exang"
+    - "oldpeak"
+    - "slope"
+    - "ca"
+    - "thal"
+  target: null

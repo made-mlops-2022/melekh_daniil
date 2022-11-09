@@ -1,0 +1,31 @@
+input_dataframe_path: "data/heart_cleveland_upload.csv"
+output_model_path: "trained_model/model_logreg.pkl"
+metric_path: "trained_model/metric_logreg.csv"
+#downloading_params:
+#  service_account_file: "configs/google_drive_key.json"
+#  scopes:
+#    - "https://www.googleapis.com/auth/drive.readonly"
+#  output_folder: "data/raw/"
+split_data:
+  test_size: 0.2
+  random_state: 42
+scaler_data:
+  scaler_name: "StandardScaler"
+train_data:
+  model_name: "LogisticRegression"
+feature_data:
+  feature:
+    - "age"
+    - "sex"
+    - "cp"
+    - "trestbps"
+    - "chol"
+    - "fbs"
+    - "restecg"
+    - "thalach"
+    - "exang"
+    - "oldpeak"
+    - "slope"
+    - "ca"
+    - "thal"
+  target: "condition"

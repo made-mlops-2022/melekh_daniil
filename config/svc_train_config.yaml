@@ -1,0 +1,24 @@
+input_dataframe_path: "data/heart_cleveland_upload.csv"
+output_model_path: "trained_model/model_svc.pkl"
+metric_path: "trained_model/metric_svc.csv"
+split_data:
+  test_size: 0.15
+  random_state: 7
+scaler_data:
+  scaler_name: "MinMaxScaler"
+train_data:
+  model_name: "SVC"
+feature_data:
+  feature:
+    - "cp"
+    - "trestbps"
+    - "chol"
+    - "fbs"
+    - "restecg"
+    - "thalach"
+    - "exang"
+    - "oldpeak"
+    - "slope"
+    - "ca"
+    - "thal"
+  target: "condition"
